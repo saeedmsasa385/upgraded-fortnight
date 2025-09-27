@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>المقالات والأحاديث — الموعظة</title>
+  <meta name="description" content="مقالات، أحاديث ومواقف النبي ﷺ مع الصحابة — محتوى نصي يزداد باستمرار.">
+  <link rel="stylesheet" href="styles2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">الموعظة</h1>
+      <nav>
+        <a href="index2.html">الرئيسية</a>
+        <a href="quran2.html">القرآن الكريم</a>
+        <a href="articles2.html" class="active">المقالات & الأحاديث</a>
+        <a href="contact2.html">اتصل بنا</a>
+
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section>
+      <h2>المقالات والأحاديث</h2>
+      <div class="search-row">
+        <input id="article-search" placeholder="ابحث في المقالات والأحاديث..." />
+      </div>
+
+      <div id="articles-list" class="articles-list">
+        <!-- عينات مقالات/أحاديث -->
+        <article class="card">
+          <h3>حديث نبوي: فضل الصدقة</h3>
+          <p>عن النبي ﷺ: "ما نقصت صدقة من مال..." — (مثال نصي). يمكنك إضافة نص الحديث كاملاً ومصدره.</p>
+          <a class="read-more" data-content="hadith1">اقرأ المزيد</a>
+        </article>
+
+        <article class="card">
+          <h3>موقف النبي مع الصحابة: مثال</h3>
+          <p>قصة قصيرة عن موقف النبي ﷺ مع أحد الصحابة تشرح خلقًا أو عبرة.</p>
+          <a class="read-more" data-content="story1">اقرأ المزيد</a>
+        </article>
+
+      </div>
+
+      <section id="article-modal" class="modal hidden">
+        <div class="modal-body">
+          <button class="close-modal" id="close-article">×</button>
+          <div id="modal-content"></div>
+        </div>
+      </section>
+
+      <section class="comments-section">
+        <h3>التعليقات</h3>
+        <form id="comment-form">
+          <input id="comment-name" placeholder="اسمك (اختياري)" />
+          <textarea id="comment-text" placeholder="اكتب تعليق..."></textarea>
+          <button type="submit" class="btn">أضف تعليق</button>
+        </form>
+        <div id="comments-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>الموعظة © <span id="year3"></span></p>
+    </div>
+  </footer>
+
+  <script src="script2.js"></script>
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>

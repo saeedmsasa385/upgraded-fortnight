@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>الموعظة — مدونة إسلامية</title>
+  <meta name="description" content="الموعظة — مدونة اسلامية تحتوي القرآن الكريم، الأحاديث، ومواقف النبي ﷺ مع الصحابة." />
+  <link rel="stylesheet" href="styles2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#A21C1C" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">الموعظة</h1>
+      <nav>
+        <a href="index2.html" class="active">الرئيسية</a>
+        <a href="quran2.html">القرآن الكريم</a>
+        <a href="articles2.html">المقالات & الأحاديث</a>
+        <a href="contact2.html">اتصل بنا</a>
+
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="hero">
+      <h2>مرحبا بك في الموعظة</h2>
+      <p>مدونة إسلامية نصّية تركز على القرآن الكريم، الأحاديث، ومواقف النبي ﷺ مع الصحابة — تصميم بسيط وسرعة في التحميل.</p>
+      <div class="cta-row">
+        <a class="btn" href="quran2.html">الذهاب إلى القرآن</a>
+        <a class="btn btn-outline" href="articles2.html">المقالات والأحاديث</a>
+      </div>
+    </section>
+
+    <section class="latest">
+      <h3>آخر الإضافات</h3>
+      <ul id="latest-list">
+        <!-- سيتم ملؤه بواسطة JS -->
+      </ul>
+    </section>
+
+    <section class="about">
+      <h3>عن المشروع</h3>
+      <p>هذا قالب بسيط قابِل للتعديل، مهيأ للنشر على استضافة ثابتة (مثل GitHub Pages, Netlify, Vercel). يحتوي ربطًا بواجهة آيات مجانية لعرض سور القرآن نصّياً.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>الموعظة © <span id="year"></span> — جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <script src="script2.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

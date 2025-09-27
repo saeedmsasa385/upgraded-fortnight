@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>القرآن الكريم — الموعظة</title>
+  <meta name="description" content="صفحة القرآن الكريم — جميع السور قابلة للضغط للعرض النصي.">
+  <link rel="stylesheet" href="styles2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">الموعظة</h1>
+      <nav>
+        <a href="index2.html">الرئيسية</a>
+        <a href="quran2.html" class="active">القرآن الكريم</a>
+        <a href="articles2.html">المقالات & الأحاديث</a>
+        <a href="contact2.html">اتصل بنا</a>
+
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section>
+      <h2>القرآن الكريم</h2>
+      <p>اضغط على أي سورة لعرض آياتها نصيًا.</p>
+
+      <div class="search-row">
+        <input id="surah-search" placeholder="ابحث في أسماء السور..." />
+      </div>
+
+      <div class="quran-layout">
+        <aside class="surah-list" id="surah-list">
+          <!-- قائمة السور ستملأ بواسطة JS -->
+          <p class="muted">جارِ جلب السور...</p>
+        </aside>
+
+        <section class="surah-content" id="surah-content">
+          <p class="muted">اختر سورة من القائمة لعرضها هنا.</p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>الموعظة © <span id="year2"></span></p>
+    </div>
+  </footer>
+
+  <script src="script2.js"></script>
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>
